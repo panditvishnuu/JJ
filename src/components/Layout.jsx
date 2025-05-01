@@ -106,6 +106,7 @@ const Index = () => {
                 className="w-full h-auto object-cover rounded-sm shadow-xl"
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring" }}
+                loading="lazy"
               />
             </motion.div>
 
@@ -121,6 +122,7 @@ const Index = () => {
                 className="w-full h-auto object-cover rounded-sm shadow-xl"
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring" }}
+                loading="lazy"
               />
             </motion.div>
           </motion.div>
