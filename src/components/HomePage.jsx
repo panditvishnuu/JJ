@@ -136,12 +136,12 @@ const HomePage = () => {
           </h2>
 
           <motion.div
-            className="border-2 border-white text-center text-xl md:text-2xl py-3 hover:bg-white/10 transition-colors"
+            className="mx-auto border-2 border-white text-center text-xl md:text-2xl py-3 hover:bg-white/10 transition-colors w-2/3"
             whileHover="hover"
             whileTap="tap"
             variants={scaleUp}
           >
-            <Link to="#" className="inline-block px-8">
+            <Link to="#" className="inline-block px-8 w-full">
               Enter the world of JJ
             </Link>
           </motion.div>

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { images } from "../../public/constants/images";
 import ContactForm from "./ContactForm";
@@ -14,6 +14,13 @@ const imageVariants = {
 };
 
 const About = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   const SectionHeader = ({ text }) => (
@@ -123,68 +130,75 @@ const About = () => {
   };
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="overflow-hidden"
-    >
-      {/* Hero Section */}
-      <motion.section
-        className="relative w-full h-[80vh] flex items-center justify-center"
-        variants={fadeIn}
+    <>
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-amber-500 z-50 origin-center"
+        style={{ scaleX }}
+      />
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        className="overflow-hidden"
       >
-        <motion.div
-          className="absolute inset-0 z-0"
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5 }}
-        >
-          <img
-            src={images.Image51252}
-            alt="About hero"
-            className="w-full h-full object-cover object-center filter contrast-125"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-black/40" />
-        </motion.div>
-
-        <motion.div
-          className="relative z-10 text-center text-white max-w-4xl px-4 space-y-8"
+        {/* Hero Section */}
+        <motion.section
+          className="relative w-full h-[80vh] flex items-center justify-center"
           variants={fadeIn}
         >
-          <h2 className="text-xl md:text-5xl font-semibold uppercase tracking-widest  text-gray-200">
-            The Story Behind <br /> our <span className="text-6xl">Masterpieces</span>
-          </h2>
+          <motion.div
+            className="absolute inset-0 z-0"
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+          >
+            <img
+              src={images.Image51252}
+              alt="About hero"
+              className="w-full h-full object-cover object-center filter contrast-125"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/40" />
+          </motion.div>
+
+          <motion.div
+            className="relative z-10 text-center text-white max-w-4xl px-4 space-y-8"
+            variants={fadeIn}
+          >
+            <h2 className="text-xl md:text-5xl font-semibold uppercase tracking-widest  text-gray-200">
+              The Story Behind <br /> our{" "}
+              <span className="text-6xl">Masterpieces</span>
+            </h2>
+          </motion.div>
+        </motion.section>
+
+        <SectionHeader text="We Draft Emotions and Stitch Memories." />
+
+        <ContentSection
+          image={images.Image51538}
+          title="Where we Started From"
+          text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
+        />
+
+        <ContentSection
+          image={images.Image}
+          title="From The Founder’s Pen"
+          text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
+        />
+
+        <FullWidthSection image={images.Image51788} title="Trust" />
+        <FullWidthSection image={images.Image51686} title="Design" />
+        <FullWidthSection image={images.Image51781} title="Story" />
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+        >
+          <ContactForm />
         </motion.div>
-      </motion.section>
-
-      <SectionHeader text="We Draft Emotions and Stitch Memories." />
-
-      <ContentSection
-        image={images.Image51538}
-        title="Where we Started From"
-        text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
-      />
-
-      <ContentSection
-        image={images.Image}
-        title="From The Founder’s Pen"
-        text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
-      />
-
-      <FullWidthSection image={images.Image51788} title="Trust" />
-      <FullWidthSection image={images.Image51686} title="Design" />
-      <FullWidthSection image={images.Image51781} title="Story" />
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
-      >
-        <ContactForm />
       </motion.div>
-    </motion.div>
+    </>
   );
 };
 
