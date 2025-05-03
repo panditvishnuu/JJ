@@ -23,7 +23,7 @@ const Index = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-white py-16"
+      className="min-h-screen bg-white py-0"
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}

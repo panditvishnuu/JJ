@@ -17,7 +17,7 @@ const DesignerProfile = () => {
 
   return (
     <motion.div
-      className="max-w-7xl mx-auto py-12 lg:py-24 px-4 lg:px-8"
+      className="max-w-7xl mx-auto py-4 lg:py-16 px-4 lg:px-8"
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}

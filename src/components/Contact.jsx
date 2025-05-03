@@ -36,7 +36,7 @@ const Contact = () => {
               className="w-full h-full object-cover object-center"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/15" />
           </motion.div>
 
           <motion.div
@@ -45,20 +45,21 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <h2 className="text-xl md:text-6xl font-semibold uppercase tracking-widest  text-gray-200">
-              We are just a Text Away
+            <h2 className="text-xl md:text-6xl font-semibold tracking-wider  text-white">
+              We are just a <br /> <span className="text-5xl">Text Away</span>
             </h2>
           </motion.div>
         </motion.section>
 
         <motion.div
-          className="py-16"
+          className="py-0 mt-10"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl text-center mb-8 ">
-            We are waiting on the Next Step.....
+          <h2 className="text-4xl md:text-5xl text-center ">
+            We are waiting on the <br />{" "}
+            <span className="text-6xl">Next Step.....</span>
           </h2>
         </motion.div>
 
@@ -67,7 +68,7 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          viewport={{ once: true, margin: "0px 0px 0px 0px" }}
         >
           <ContactForm />
         </motion.div>

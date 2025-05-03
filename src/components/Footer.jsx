@@ -3,11 +3,11 @@ import { images } from "../../public/constants/images";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#CBBD93] text-gray-700 border-t">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* Left Section - Logo and Tagline */}
-          <div className="md:w-1/3">
+    <footer className="bg-[#CBBD93] text-[#2e1f1c] border-t border-[#2e1f1c]">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
+        <div className="flex flex-col md:flex-row md:justify-between gap-12">
+          {/* Left Section */}
+          <div className="md:w-1/3 flex flex-col items-start">
             <div className="w-32 h-32 mb-4">
               <img
                 src={images.logo}
@@ -15,99 +15,99 @@ const Footer = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <p className="text-lg italic text-gray-600">
-              We Design Emotions with Bespoke Collections.
+            <p className="text-xl font-bold italic leading-relaxed">
+              We Design Emotions with
+              <br />
+              Bespoke Collections.
             </p>
           </div>
 
-          {/* Right Section - Columns and Copyright */}
-          <div className="md:w-2/3">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              {/* Customer Support */}
-              <div>
-                <h3 className="font-bold uppercase text-sm mb-4 tracking-wider">
-                  CUSTOMER SUPPORT
-                </h3>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Customer Service
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Buy Online. Pick Up In-Store.
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Store Location
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Gift Cards
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* JJ Atelier */}
-              <div>
-                <h3 className="font-bold uppercase text-sm mb-4 tracking-wider">
-                  JJ ATELIER
-                </h3>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Our Story
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      My Rewards
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Why Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* About Us */}
-              <div>
-                <h3 className="font-bold uppercase text-sm mb-4 tracking-wider">
-                  ABOUT US
-                </h3>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Our Values
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Sustainability
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-black">
-                      Careers
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          {/* Columns */}
+          <div className="md:w-2/3 flex flex-col md:flex-row justify-between">
+            {/* Customer Support */}
+            <div className="mb-8 md:mb-0">
+              <h3 className=" uppercase text-xl font-bold tracking-widest mb-3">
+                Customer Support
+              </h3>
+              <ul className="space-y-2 text-md font-semibold">
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Customer Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Buy Online. Pick Up In-Store.
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Store Location
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Gift Cards
+                  </a>
+                </li>
+              </ul>
             </div>
 
-            {/* Copyright */}
-            <div className="border-t border-gray-300 pt-4">
-              <p className="text-right text-sm text-gray-500">
-                Copyright © 2025 Reserved to JJ Atelier.
-              </p>
+            {/* JJ Atelier */}
+            <div className="mb-8 md:mb-0">
+              <h3 className=" uppercase text-xl font-bold tracking-widest mb-3">
+                JJ Atelier
+              </h3>
+              <ul className="space-y-2 text-md font-semibold">
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Our Story
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    My Rewards
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Why Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* About Us */}
+            <div>
+              <h3 className=" uppercase text-xl font-bold tracking-widest mb-3">
+                About Us
+              </h3>
+              <ul className="space-y-2 text-md font-semibold">
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Our Values
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Sustainability
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-black">
+                    Careers
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-10 border-t border-[#2e1f1c] pt-4">
+          <p className="text-center text-sm uppercase tracking-wide">
+            Copyright 2025 Reserved to JJ Atelier. <span className="font-bold underline">   Designed & Developed by CLAPONN ❤️ </span>
+          </p>
         </div>
       </div>
     </footer>

@@ -54,7 +54,7 @@ const ContactForm = () => {
       className="max-w-5xl mx-auto px-4 py-12 lg:py-16"
     >
       <motion.div className="text-center mb-10" variants={itemVariants}>
-        <h2 className="text-gray-500 font-light mb-2 text-xl tracking-wide">
+        <h2 className="text-gray-500 font-bold mb-2 text-xl tracking-wide">
           Explore Our Bespoke Collection
         </h2>
         <h1 className="text-4xl md:text-5xl font-normal mb-8">
@@ -125,7 +125,7 @@ const ContactForm = () => {
         </motion.div>
 
         <motion.div
-          className="flex justify-center mt-10"
+          className="flex justify-center mt-14"
           variants={itemVariants}
         >
           <SubmitButton />

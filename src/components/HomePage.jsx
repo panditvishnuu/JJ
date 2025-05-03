@@ -160,7 +160,7 @@ const HomePage = () => {
 
       {/* Founder's Note */}
       <div className="py-16 px-4 text-center">
-        <h2 className="text-4xl md:text-6xl font-cormorant mb-8">
+        <h2 className="text-4xl md:text-6xl font-cormorant md:mb-2">
           Founder’s Note
         </h2>
         <DesignerProfile />

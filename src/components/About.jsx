@@ -34,7 +34,7 @@ const About = () => {
     </motion.h2>
   );
 
-  const ContentSection = ({ image, title, text, reverse = false }) => {
+  const ContentSection = ({ image, title, text, reverse = true}) => {
     const [sectionRef, sectionInView] = useInView({
       threshold: 0.1,
       triggerOnce: true,
@@ -49,7 +49,7 @@ const About = () => {
       >
         <div
           className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 px-4 lg:px-8 ${
-            reverse ? "lg:flex-row-reverse" : ""
+            reverse ? "md:flex-row-reverse" : ""
           }`}
         >
           <motion.div
@@ -167,7 +167,7 @@ const About = () => {
           >
             <h2 className="text-xl md:text-5xl font-semibold uppercase tracking-widest  text-gray-200">
               The Story Behind <br /> our{" "}
-              <span className="text-6xl">Masterpieces</span>
+              <span className="text-5xl md:text-6xl">Masterpieces</span>
             </h2>
           </motion.div>
         </motion.section>
@@ -178,13 +178,22 @@ const About = () => {
           image={images.Image51538}
           title="Where we Started From"
           text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
+          
         />
 
         <ContentSection
           image={images.Image}
           title="From The Founder’s Pen"
           text="Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery. Enhanced with sequin work, beads, and detailed kasab embroidery, this sherwani offers a perfect blend of classic elegance and fine craftsmanship. Where we Started From The Rich Black Sherwani Set exudes timeless sophistication, adorned with intricate resham threadwork and antique gold metallic embroidery."
+          
         />
+
+        <div>
+          <h2 className="text-4xl text-center text-gray-400">
+            What makes the <br />
+            <span className="text-6xl text-black"> Difference ?</span>
+          </h2>
+        </div>
 
         <FullWidthSection image={images.Image51788} title="Trust" />
         <FullWidthSection image={images.Image51686} title="Design" />
