@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ProductCard from "./FeatureProductCard";
 import { images } from "../../public/constants/images";
+import { useProducts } from "../hooks/useProducts";
 
 const productVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -86,6 +87,14 @@ const FeaturedCollection = () => {
       link: "/product",
     },
   ];
+
+  const { products, loading, error } = useProducts();
+
+  if (loading) return <div>Loading products...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  console.log(products);
+  
 
   return (
     <motion.div

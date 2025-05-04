@@ -51,7 +51,7 @@ const ContactForm = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="max-w-5xl mx-auto px-4 py-12 lg:py-16"
+      className="max-w-5xl mx-auto px-4 py-0 lg:py-16"
     >
       <motion.div className="text-center mb-10" variants={itemVariants}>
         <h2 className="text-gray-500 font-bold mb-2 text-xl tracking-wide">

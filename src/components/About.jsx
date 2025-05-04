@@ -203,6 +203,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+          className="mb-10 md:mb-0"
         >
           <ContactForm />
         </motion.div>

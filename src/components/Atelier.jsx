@@ -50,7 +50,7 @@ const Atelier = () => {
           <motion.img
             src={images.Image51510}
             alt="Bespoke collection background"
-            className="w-full h-full object-cover object-center filter contrast-125"
+            className="w-full h-full object-cover object-center filter contrast-150"
             loading="lazy"
             initial={{ scale: 1.1 }}
             animate={heroInView ? { scale: 1 } : {}}
@@ -66,10 +66,10 @@ const Atelier = () => {
           variants={fadeIn}
         >
           <motion.h2
-            className="text-lg md:text-6xl font-semibold uppercase tracking-widest text-shadow"
+            className="text-xl md:text-6xl font-semibold uppercase tracking-wider text-shadow"
             variants={fadeIn}
           >
-            Bespoke collection of <br /> JJ Atelier
+            Bespoke collection of <br /> <span className="text-3xl md:text-7xl"> JJ Atelier </span>
           </motion.h2>
         </motion.div>
       </section>

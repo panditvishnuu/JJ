@@ -4,7 +4,7 @@ import { images } from "../../public/constants/images";
 const Footer = () => {
   return (
     <footer className="bg-[#CBBD93] text-[#2e1f1c] border-t border-[#2e1f1c]">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-10">
         <div className="flex flex-col md:flex-row md:justify-between gap-12">
           {/* Left Section */}
           <div className="md:w-1/3 flex flex-col items-start">
