@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-white md:static fixed top-0 left-0 right-0 z-50 shadow-md">
       {/* Top Row - Logo & Appointment Button */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
         <div className="flex items-center justify-between relative">
