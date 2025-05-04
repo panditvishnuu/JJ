@@ -27,7 +27,7 @@ import eliara from "../../src/assets/images/Eliara.jpg";
 import inara from "../../src/assets/images/Inara.jpg";
 import ishavaa from "../../src/assets/images/Ishvaa.jpg";
 import namya from "../../src/assets//images/NAMYA.jpg";
-import oceira from "../../src/assets/images/oceira.jpg";
+import oceira from "../../src/assets/images/Velina.jpg";
 import rakaa from "../../src/assets/images/RAKAA.jpg";
 import sevina from "../../src/assets/images/SEVINA.jpg";
 
