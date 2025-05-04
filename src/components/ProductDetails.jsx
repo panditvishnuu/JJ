@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useLocation, useParams, Link } from "react-router-dom";
 
-const ProductDetail = ({ product }) => {
+const ProductDetail = () => {
+  const { state } = useLocation();
+  const product = state?.product;
+  const { id } = useParams();
+
+  if (!product) {
+    return <p>Product not found for ID {id}</p>;
+  }
+
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const [selectedSize, setSelectedSize] = (useState < string) | (null > null);
+  const [selectedSize, setSelectedSize] = useState("M");
 
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
@@ -27,11 +36,13 @@ const ProductDetail = ({ product }) => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <Link to="/atelier" className="text-blue-500 underline mb-4 block">
+        ← Back to collection
+      </Link>
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Column - Image Gallery */}
         <div className="lg:w-1/2">
           <div className="flex">
-            {/* Thumbnails */}
             <div className="hidden sm:flex flex-col gap-2 mr-4">
               {product.images.map((img, index) => (
                 <div
@@ -51,82 +62,45 @@ const ProductDetail = ({ product }) => {
                 </div>
               ))}
             </div>
-
-            {/* Main Image */}
             <div className="relative flex-1">
               <img
-                src={product.images[selectedImageIndex]}
+                src={product.image}
                 alt={product.name}
                 className="w-full h-auto object-cover"
               />
-
-              {/* Navigation Arrows */}
               <div className="absolute inset-0 flex items-center justify-between px-4">
                 <button
                   onClick={handlePrevImage}
-                  className="bg-white rounded-full p-2 shadow-md opacity-70 hover:opacity-100"
-                  aria-label="Previous image"
+                  className="bg-white rounded-full p-2 shadow-md opacity-70 hover:opacidade-100"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-5 h-5"
-                  >
-                    <path d="m15 18-6-6 6-6" />
-                  </svg>
+                  ‹
                 </button>
                 <button
                   onClick={handleNextImage}
-                  className="bg-white rounded-full p-2 shadow-md opacity-70 hover:opacity-100"
-                  aria-label="Next image"
+                  className="bg-white rounded-full p-2 shadow-md opacity-70 hover:opacidade-100"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-5 h-5"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
+                  ›
                 </button>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Right Column - Product Info */}
+        {/* Right Column - Info */}
         <div className="lg:w-1/2">
-          {/* Brand and Product Name */}
           <div className="mb-4">
             <h2 className="text-xl font-serif">{product.brand}</h2>
             <h1 className="text-3xl font-serif">{product.name}</h1>
           </div>
-
-          {/* Price */}
           <div className="mb-6">
             <p className="text-2xl font-serif">₹ {product.price}</p>
             <p className="text-sm text-gray-600">{product.taxInfo}</p>
           </div>
-
-          {/* Description */}
           <div className="mb-8">
-            <p className="text-sm leading-relaxed">{product.description}</p>
+            {" "}
+            <p className="text-sm leading-relaxed">
+              {product.description}
+            </p>{" "}
           </div>
-
-          {/* Size Selection */}
           <div className="mb-8">
             <p className="font-serif mb-2">Select Size</p>
             <div className="flex gap-2">
@@ -145,55 +119,44 @@ const ProductDetail = ({ product }) => {
               ))}
             </div>
           </div>
-
-          {/* Product Details */}
           <div className="mb-8">
             <h3 className="text-2xl font-serif mb-4">Product Details</h3>
             <div className="space-y-2 text-sm">
-              <p>
-                <span className="font-medium">Style code:</span>{" "}
-                {product.styleCode}
-              </p>
-              <p>
-                <span className="font-medium">Set Includes:</span>{" "}
-                {product.setIncludes}
-              </p>
-              <p>
-                <span className="font-medium">Fabric:</span> {product.fabric}
-              </p>
-              <p>
-                <span className="font-medium">Color:</span> {product.color}
-              </p>
-              <p>
-                <span className="font-medium">Wash care:</span>{" "}
-                {product.washCare}
-              </p>
-              <p>
-                <span className="font-medium">Model Wearing Size:</span>{" "}
-                {product.modelSize}
-              </p>
-              <p className="text-xs text-gray-600 uppercase mt-4">
+              {Object.entries({
+                "Style code": product.styleCode,
+                "Set Includes": product.setIncludes,
+                Fabric:
+                  typeof product.fabric === "object"
+                    ? Object.entries(product.fabric)
+                        .map(([k, v]) => `${k}: ${v}`)
+                        .join(", ")
+                    : product.fabric,
+                Color: product.color,
+                "Wash care": product.washCare,
+                "Model Wearing Size": product.modelSize,
+              }).map(([label, value]) => (
+                <p key={label}>
+                  <span className="font-medium">{label}:</span> {value}
+                </p>
+              ))}
+              <p className="text-md text-gray-600 uppercase mt-4">
                 DISCLAIMER:
               </p>
-              <p className="text-xs text-gray-600">{product.disclaimer}</p>
+              <p className="text-sm text-gray-600">{product.disclaimer}</p>
             </div>
           </div>
-
-          {/* Call to Action */}
           <div className="mb-8">
             <p className="mb-2">
               Interested in the Master Piece?{" "}
               <span className="text-2xl font-serif">Buy Now</span>
             </p>
           </div>
-
-          {/* Book Appointment Button */}
-          <Button
-            variant="outline"
-            className="w-full py-6 text-lg rounded-none border-2"
+          <Link to="/contact"
+            
+            className="w-full px-14 py-4 text-lg rounded-none border-2"
           >
             Book an Appointment Now
-          </Button>
+          </Link>
         </div>
       </div>
     </div>

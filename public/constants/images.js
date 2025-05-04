@@ -17,8 +17,34 @@ import logo from "../../src/assets/images/JJ Logo.png";
 import Image51521 from "../../src/assets/images/Untitled Session51521.png";
 import Image51384 from "../../src/assets/images/Untitled Session51384.png";
 import Image51322 from "../../src/assets/images/Untitled Session51322.png";
+import zairah from "../../src/assets/images/zairah.jpg";
+import erya from "../../src/assets/images/Erya.jpg";
+import velina from "../../src/assets/images/Velina.jpg";
+import alvara from "../..//src/assets/images/ALVARA.jpg";
+import amaira from "../../src/assets/images/Amaira.jpg";
+import azmina from "../../src/assets/images/Azmina.jpg";
+import eliara from "../../src/assets/images/Eliara.jpg";
+import inara from "../../src/assets/images/Inara.jpg";
+import ishavaa from "../../src/assets/images/Ishvaa.jpg";
+import namya from "../../src/assets//images/NAMYA.jpg";
+import oceira from "../../src/assets/images/oceira.jpg";
+import rakaa from "../../src/assets/images/RAKAA.jpg";
+import sevina from "../../src/assets/images/SEVINA.jpg";
 
 export const images = {
+  zairah,
+  erya,
+  velina,
+  alvara,
+  amaira,
+  azmina,
+  eliara,
+  inara,
+  ishavaa,
+  namya,
+  oceira,
+  rakaa,
+  sevina,
   Image51521,
   Image51384,
   Image51322,

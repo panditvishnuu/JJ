@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const SubmitButton = ({ className, children = "Submit", ...props }) => {
+const SubmitButton = ({ className, children = "Submit", handleSubmit}) => {
   return (
     <motion.button
       className={cn(
@@ -14,7 +14,7 @@ const SubmitButton = ({ className, children = "Submit", ...props }) => {
       type="submit"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      {...props}
+      onClick={handleSubmit}
     >
       <span className="relative z-10">{children}</span>
       <motion.div

@@ -31,19 +31,39 @@ const ContactForm = () => {
     visible: { opacity: 1, y: 0 },
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast({
-      title: "Appointment Booked",
-      description: "We'll be in touch shortly to confirm your appointment.",
-    });
-    setFormData({
-      firstName: "",
-      secondName: "",
-      collectionName: "",
-      phoneNumber: "",
-      description: "",
-    });
+
+    try {
+      const response = await fetch("http://localhost:3000/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error("Failed to send message");
+
+      toast({
+        title: "Appointment Booked",
+        description: "We'll be in touch shortly to confirm your appointment.",
+      });
+
+      setFormData({
+        firstName: "",
+        secondName: "",
+        collectionName: "",
+        phoneNumber: "",
+        description: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -128,7 +148,7 @@ const ContactForm = () => {
           className="flex justify-center mt-14"
           variants={itemVariants}
         >
-          <SubmitButton />
+          <button onClick={handleSubmit}>submit</button>
         </motion.div>
       </motion.form>
     </motion.div>
