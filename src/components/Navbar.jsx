@@ -32,7 +32,7 @@ const Navigation = () => {
           </Link>
 
           {/* Appointment Button (right) */}
-          <Link to="/appointment" className="hidden md:block">
+          <Link to="/contact" className="hidden md:block">
             <button className="border border-black px-4 py-1.5 text-sm font-medium hover:bg-black hover:text-white transition-colors">
               Book Appointment
             </button>
