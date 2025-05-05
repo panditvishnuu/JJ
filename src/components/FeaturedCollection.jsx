@@ -343,6 +343,7 @@ const productVariants = {
   },
 };
 
+
 const FeaturedCollection = () => {
   return (
     <motion.div
@@ -356,28 +357,32 @@ const FeaturedCollection = () => {
           },
         },
       }}
-      className="flex-1 md:pl-10"
+      className="flex-1 md:pl-10 px-4" // Added horizontal padding for mobile
     >
       <motion.h1
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="text-xl font-serif mb-8 text-center md:text-left"
+        className="text-xl font-serif mb-8 text-center md:text-left px-2 md:px-0" // Added mobile padding
       >
         FEATURED COLLECTION BY{" "}
         <span className="italic font-medium underline decoration-amber-500">
           JJ ATELIER
         </span>
       </motion.h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {productCardVariants.map((product, key) => (
+  
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0"> {/* Added mobile padding */}
+        {productCardVariants.map((product) => (
           <Link
             key={product.id}
             to={`/product/${product.id}`}
             className="block"
             state={{ product }}
           >
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <motion.div 
+              whileHover={{ scale: 1.02 }} 
+              whileTap={{ scale: 0.98 }}
+              className="h-full" // Ensure consistent height
+            >
               <ProductCard product={product} />
             </motion.div>
           </Link>
