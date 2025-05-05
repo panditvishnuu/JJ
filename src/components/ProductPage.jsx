@@ -55,17 +55,17 @@ const ProductPage = () => {
 
   return (
     <>
-      <section className="relative w-full h-[80vh] flex items-center justify-center">
+      <section className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src={images.Image51301} // Replace with your actual image path
+            src={images.Image51301}
             alt="Background"
             className="w-full h-full object-cover object-center filter contrast-125"
             loading="lazy"
           />
         </div>
-        <div className="relative z-10 text-center text-black max-w-4xl px-4 space-y-8">
-          <h2 className="text-lg md:text-6xl font-semibold uppercase tracking-widest">
+        <div className="relative z-10 text-center text-black max-w-3xl px-4 space-y-6">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold uppercase tracking-wider">
             Product Description
           </h2>
         </div>

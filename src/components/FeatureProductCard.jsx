@@ -15,11 +15,11 @@ const ProductCard = ({ product }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.4 }}
-      className="mb-8 group relative"
+      className="mb-6 sm:mb-8 group relative w-full max-w-sm mx-auto"
     >
       <Link to={`/product/${id}`} state={{ product }} className="block">
         <motion.div
-          className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl"
+          className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-white"
           whileHover="hover"
           whileTap="tap"
         >
@@ -27,18 +27,14 @@ const ProductCard = ({ product }) => {
             <motion.img
               src={image}
               alt={name}
-              className="w-full h-[500px] object-cover"
+              className="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 ease-in-out"
               loading="lazy"
               initial={{ scale: 1 }}
               variants={{ hover: { scale: 1.02 } }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
             />
-            <motion.div
-              className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center"
-              transition={{ duration: 0.3 }}
-            >
+            <motion.div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
               <motion.span
-                className="text-white text-lg font-medium bg-black/70 px-6 py-2 rounded-full"
+                className="text-white text-base font-medium bg-black/70 px-4 py-2 rounded-full"
                 initial={{ y: 20, opacity: 0 }}
                 variants={{ hover: { y: 0, opacity: 1 } }}
               >
@@ -47,7 +43,7 @@ const ProductCard = ({ product }) => {
             </motion.div>
           </div>
 
-          <div className="mt-3 text-center space-y-1 p-4 bg-white">
+          <div className="mt-3 text-center space-y-1 p-4">
             <motion.h3
               whileHover={{ color: "#b45309" }}
               className="text-sm font-medium text-gray-700"
@@ -56,7 +52,7 @@ const ProductCard = ({ product }) => {
             </motion.h3>
             <motion.p
               whileHover={{ color: "#000" }}
-              className="text-sm text-gray-600"
+              className="text-sm text-gray-600 truncate"
             >
               {name}
             </motion.p>
