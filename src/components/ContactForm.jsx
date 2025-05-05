@@ -148,7 +148,7 @@ const ContactForm = () => {
           className="flex justify-center mt-14"
           variants={itemVariants}
         >
-          <button onClick={handleSubmit}>submit</button>
+          <button className="px-10 mb-5 py-4 border border-black" onClick={handleSubmit}>submit</button>
         </motion.div>
       </motion.form>
     </motion.div>
