@@ -35,7 +35,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/send", {
+      const response = await fetch("https://jj-backend-1.onrender.com/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
