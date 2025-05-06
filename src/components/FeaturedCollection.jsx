@@ -7,7 +7,7 @@ const productCardVariants = [
   {
     id: 1,
     image: images.Image51252,
-    brand: "JJ Atelier",
+    tag: "A stillness sculpted in movement",
     name: "Zairah",
     price: null,
     currency: "INR",
@@ -40,7 +40,7 @@ const productCardVariants = [
   {
     id: 2,
     image: images.erya,
-    brand: "JJ Atelier",
+    tag: "comfort and sophistication",
     name: "Erya",
     price: null,
     currency: "INR",
@@ -58,7 +58,7 @@ const productCardVariants = [
     },
     color: null,
     washCare: "Dry clean only",
-    modelSize: null,
+    modelSize: "Medium",
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
     images: [
@@ -74,7 +74,7 @@ const productCardVariants = [
   {
     id: 3,
     image: images.velina,
-    brand: "JJ Atelier",
+    tag: "Where Vidula begins",
     name: "Velina",
     price: null,
     currency: "INR",
@@ -92,7 +92,7 @@ const productCardVariants = [
     },
     color: null,
     washCare: "Dry clean only",
-    modelSize: null,
+    modelSize: "Medium",
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
     images: [
@@ -106,7 +106,7 @@ const productCardVariants = [
   {
     id: 4,
     image: images.azmina,
-    brand: "JJ Atelier",
+    tag: "A dusk spirit in golden silence",
     name: "Azmina",
     price: null,
     currency: "INR",
@@ -154,7 +154,7 @@ const productCardVariants = [
     },
     color: null,
     washCare: "Dry clean only",
-    modelSize: null,
+    modelSize: "Medium",
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
     images: [
@@ -203,7 +203,7 @@ const productCardVariants = [
   {
     id: 7,
     image: images.inara,
-    brand: "JJ Atelier",
+    tag: "A Sculpted Symphony of Form and Fluidity",
     name: "Inara",
     price: null,
     currency: "INR",
@@ -235,7 +235,7 @@ const productCardVariants = [
   {
     id: 8,
     image: images.eliara,
-    brand: "JJ Atelier",
+    tag: "Where daybreak meets design",
     name: "Eliara",
     price: null,
     currency: "INR",
@@ -260,7 +260,7 @@ const productCardVariants = [
   {
     id: 9,
     image: images.namya,
-    brand: "JJ Atelier",
+    tag: "An ode to the eternal muse",
     name: "Namya",
     price: null,
     currency: "INR",
@@ -291,7 +291,7 @@ const productCardVariants = [
   {
     id: 10,
     image: images.Image51652,
-    brand: "JJ Atelier",
+    tag: "Legacy in Form, Geometry in Motion",
     name: "Tazirah",
     price: null,
     currency: "INR",
@@ -324,7 +324,7 @@ const productCardVariants = [
   {
     id: 11,
     image: images.oceira,
-    brand: "JJ Atelier",
+    tag: "An ode to still waters and silent symphonies",
     name: "Oceira",
     price: null,
     currency: "INR",
@@ -355,7 +355,7 @@ const productCardVariants = [
   {
     id: 12,
     image: images.alvara,
-    brand: "JJ Atelier",
+    tag: "Where sculpture meets softness",
     name: "Alvara",
     price: null,
     currency: "INR",
@@ -388,7 +388,7 @@ const productCardVariants = [
   {
     id: 13,
     image: images.sevina,
-    brand: "JJ Atelier",
+    tag: "Where wind becomes wearable",
     name: "Sevina",
     price: null,
     currency: "INR",

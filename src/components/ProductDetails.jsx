@@ -96,11 +96,11 @@ const ProductDetail = () => {
         {/* Right Column - Product Info */}
         <div className="lg:w-1/2 w-full">
           <div className="mb-5 space-y-1">
-            <h2 className="text-lg sm:text-xl font-serif text-gray-700">
-              {product.brand}
+            <h2 className="text-2xl sm:text-3xl font-serif font-semibold">
+            {product.name}
             </h2>
-            <h1 className="text-2xl sm:text-3xl font-serif font-semibold">
-              {product.name}
+            <h1 className="text-lg sm:text-xl font-serif text-gray-700  ">
+            {product.tag}
             </h1>
           </div>
 
@@ -187,3 +187,4 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
+
