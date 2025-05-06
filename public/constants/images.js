@@ -69,8 +69,21 @@ import Image51615 from "../../src/assets/images/Untitled Session51615.jpg";
 import Image51618 from "../../src/assets/images/Untitled Session51618.jpg";
 import Image51620 from "../../src/assets/images/Untitled Session51620.jpg";
 
+//namya
+import Image51707 from "../../src/assets/images/Untitled Session51707.jpg";
+import Image51709 from "../../src/assets/images/Untitled Session51709.jpg";
+import Image51718 from "../../src/assets/images/Untitled Session51718.jpg";
+import Image51723 from "../../src/assets/images/Untitled Session51723.jpg";
+import Image51725 from "../../src/assets/images/Untitled Session51725.jpg";
+import Image51728 from "../../src/assets/images/Untitled Session51728.jpg";
 
 export const images = {
+  Image51707,
+  Image51709,
+  Image51718,
+  Image51723,
+  Image51725,
+  Image51728,
   Image51607,
   Image51609,
   Image51610,

@@ -253,7 +253,13 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51301,
+      images.Image51322,
+      images.Image51384,
+      images.Image51432,
+      images.Image51582,
+    ],
   },
   {
     id: 10,
