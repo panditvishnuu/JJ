@@ -77,7 +77,24 @@ import Image51723 from "../../src/assets/images/Untitled Session51723.jpg";
 import Image51725 from "../../src/assets/images/Untitled Session51725.jpg";
 import Image51728 from "../../src/assets/images/Untitled Session51728.jpg";
 
+//oceira
+
+import Image51734 from "../../src/assets/images/Untitled Session51734.jpg";
+import Image51743 from "../../src/assets/images/Untitled Session51743.jpg";
+import Image51749 from "../../src/assets/images/Untitled Session51749.jpg";
+import Image51756 from "../../src/assets/images/Untitled Session51756.jpg";
+import Image51766 from "../../src/assets/images/Untitled Session51766.jpg";
+import Image51768 from "../../src/assets/images/Untitled Session51768.jpg";
+import Image51769 from "../../src/assets/images/Untitled Session51769.jpg";
+
 export const images = {
+  Image51734,
+  Image51743,
+  Image51749,
+  Image51756,
+  Image51766,
+  Image51768,
+  Image51769,
   Image51707,
   Image51709,
   Image51718,
