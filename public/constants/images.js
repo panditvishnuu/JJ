@@ -47,7 +47,14 @@ import Image51489 from "../../src/assets/images/Untitled Session51489.jpg";
 import Image51494 from "../../src/assets/images/Untitled Session51494.jpg";
 import Image51498 from "../../src/assets/images/Untitled Session51498.jpg";
 
+//eliara
+import Image51647 from "../../src/assets/images/Untitled Session51647.jpg";
+import Image51648 from "../../src/assets/images/Untitled Session51648.jpg";
+
+
 export const images = {
+  Image51647,
+  Image51648,
   Image51480,
   Image51487,
   Image51489,
