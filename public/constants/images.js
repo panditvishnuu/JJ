@@ -87,7 +87,21 @@ import Image51766 from "../../src/assets/images/Untitled Session51766.jpg";
 import Image51768 from "../../src/assets/images/Untitled Session51768.jpg";
 import Image51769 from "../../src/assets/images/Untitled Session51769.jpg";
 
+//sevina
+import Image51832 from "../../src/assets/images/Untitled Session51832.jpg";
+import Image51836 from "../../src/assets/images/Untitled Session51836.jpg";
+import Image51837 from "../../src/assets/images/Untitled Session51837.jpg";
+import Image51839 from "../../src/assets/images/Untitled Session51839.jpg";
+import Image51852 from "../../src/assets/images/Untitled Session51852.jpg";
+import Image51853 from "../../src/assets/images/Untitled Session51853.jpg";
+
 export const images = {
+  Image51832,
+  Image51836,
+  Image51837,
+  Image51839,
+  Image51852,
+  Image51853,
   Image51734,
   Image51743,
   Image51749,
