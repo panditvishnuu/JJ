@@ -51,8 +51,39 @@ import Image51498 from "../../src/assets/images/Untitled Session51498.jpg";
 import Image51647 from "../../src/assets/images/Untitled Session51647.jpg";
 import Image51648 from "../../src/assets/images/Untitled Session51648.jpg";
 
+//erya
+// import Image51279 from "../../src/assets/images/Untitled Session51279 1.png";
+import Image51286 from "../../src/assets/images/Untitled Session51286.jpg";
+import Image51292 from "../../src/assets/images/Untitled Session51292.jpg";
+import Image51298 from "../../src/assets/images/Untitled Session51298.jpg";
+import Image51302 from "../../src/assets/images/Untitled Session51302.jpg";
+import Image51314 from "../../src/assets/images/Untitled Session51314.jpg";
+import Image51353 from "../../src/assets/images/Untitled Session51353.jpg";
+import Image51354 from "../../src/assets/images/Untitled Session51354.jpg";
+
+//inara
+import Image51607 from "../../src/assets/images/Untitled Session51607.jpg";
+import Image51609 from "../../src/assets/images/Untitled Session51609.jpg";
+import Image51610 from "../../src/assets/images/Untitled Session51610.jpg";
+import Image51615 from "../../src/assets/images/Untitled Session51615.jpg";
+import Image51618 from "../../src/assets/images/Untitled Session51618.jpg";
+import Image51620 from "../../src/assets/images/Untitled Session51620.jpg";
+
 
 export const images = {
+  Image51607,
+  Image51609,
+  Image51610,
+  Image51615,
+  Image51618,
+  Image51620,
+  Image51286,
+  Image51292,
+  Image51298,
+  Image51302,
+  Image51314,
+  Image51353,
+  Image51354,
   Image51647,
   Image51648,
   Image51480,

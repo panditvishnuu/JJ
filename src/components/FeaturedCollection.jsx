@@ -53,7 +53,15 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51279,
+      images.Image51286,
+      images.Image51292,
+      images.Image51298,
+      images.Image51302,
+      images.Image51314,
+      images.Image51353,
+    ],
   },
   {
     id: 3,
@@ -185,7 +193,14 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51415,
+      images.Image51432,
+      images.Image51510,
+      images.Image51521,
+      images.Image51538,
+      images.Image51539,
+    ],
   },
   {
     id: 8,
