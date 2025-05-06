@@ -130,7 +130,21 @@ import Image51556 from "../../src/assets/images/Untitled Session51556.jpg";
 import Image51557 from "../../src/assets/images/Untitled Session51557.jpg";
 import Image51560 from "../../src/assets/images/Untitled Session51560.jpg";
 
+//ores
+import Image51563 from "../../src/assets/images/Untitled Session51563.jpg";
+import Image51571 from "../../src/assets/images/Untitled Session51571.jpg";
+import Image51573 from "../../src/assets/images/Untitled Session51573.jpg";
+import Image51575 from "../../src/assets/images/Untitled Session51575.jpg";
+import Image51576 from "../../src/assets/images/Untitled Session51576.jpg";
+import Image51577 from "../../src/assets/images/Untitled Session51577.jpg";
+
 export const images = {
+  Image51563,
+  Image51571,
+  Image51573,
+  Image51575,
+  Image51576,
+  Image51577,
   Image51549,
   Image51552,
   Image51553,

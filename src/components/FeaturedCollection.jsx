@@ -136,7 +136,7 @@ const productCardVariants = [
   },
   {
     id: 5,
-    image: images.amaira,
+    image: images.Image51552,
     brand: "JJ Atelier",
     name: "Zayelle",
     price: null,
@@ -170,7 +170,7 @@ const productCardVariants = [
   },
   {
     id: 6,
-    image: images.oceira,
+    image: images.Image51573,
     brand: "JJ Atelier",
     name: "Oriselle",
     price: null,
@@ -191,7 +191,14 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51563,
+      images.Image51571,
+      images.Image51573,
+      images.Image51575,
+      images.Image51576,
+      images.Image51577,
+    ],
   },
   {
     id: 7,
