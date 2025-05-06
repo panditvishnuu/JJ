@@ -225,10 +225,7 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [
-      images.Image51647,
-      images.Image51648,
-    ],
+    images: [images.Image51647, images.Image51648],
   },
   {
     id: 9,
@@ -263,7 +260,7 @@ const productCardVariants = [
   },
   {
     id: 10,
-    image: images.azmina,
+    image: images.Image51652,
     brand: "JJ Atelier",
     name: "Tazirah",
     price: null,
@@ -284,7 +281,15 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51652,
+      images.Image51658,
+      images.Image51662,
+      images.Image51665,
+      images.Image51668,
+      images.Image51669,
+      images.Image51671,
+    ],
   },
   {
     id: 11,
@@ -394,7 +399,6 @@ const productVariants = {
   },
 };
 
-
 const FeaturedCollection = () => {
   return (
     <motion.div
@@ -420,8 +424,10 @@ const FeaturedCollection = () => {
           JJ ATELIER
         </span>
       </motion.h1>
-  
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0"> {/* Added mobile padding */}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0">
+        {" "}
+        {/* Added mobile padding */}
         {productCardVariants.map((product) => (
           <Link
             key={product.id}
@@ -429,8 +435,8 @@ const FeaturedCollection = () => {
             className="block"
             state={{ product }}
           >
-            <motion.div 
-              whileHover={{ scale: 1.02 }} 
+            <motion.div
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="h-full" // Ensure consistent height
             >

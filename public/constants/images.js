@@ -95,7 +95,25 @@ import Image51839 from "../../src/assets/images/Untitled Session51839.jpg";
 import Image51852 from "../../src/assets/images/Untitled Session51852.jpg";
 import Image51853 from "../../src/assets/images/Untitled Session51853.jpg";
 
+//tazirah
+import Image51652 from "../../src/assets/images/Untitled Session51652.jpg";
+import Image51658 from "../../src/assets/images/Untitled Session51658.jpg";
+import Image51662 from "../../src/assets/images/Untitled Session51662.jpg";
+import Image51665 from "../../src/assets/images/Untitled Session51665.jpg";
+import Image51668 from "../../src/assets/images/Untitled Session51668.jpg";
+import Image51669 from "../../src/assets/images/Untitled Session51669.jpg";
+import Image51671 from "../../src/assets/images/Untitled Session51671.jpg";
+import Image51678 from "../../src/assets/images/Untitled Session51678.jpg";
+
 export const images = {
+  Image51652,
+  Image51658,
+  Image51662,
+  Image51665,
+  Image51668,
+  Image51669,
+  Image51671,
+  Image51678,
   Image51832,
   Image51836,
   Image51837,
