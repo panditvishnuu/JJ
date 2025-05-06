@@ -105,7 +105,33 @@ import Image51669 from "../../src/assets/images/Untitled Session51669.jpg";
 import Image51671 from "../../src/assets/images/Untitled Session51671.jpg";
 import Image51678 from "../../src/assets/images/Untitled Session51678.jpg";
 
+//velina
+import Image51404 from "../../src/assets/images/Untitled Session51404.jpg";
+import Image51412 from "../../src/assets/images/Untitled Session51412.jpg";
+import Image51422 from "../../src/assets/images/Untitled Session51422.jpg";
+import Image51427 from "../../src/assets/images/Untitled Session51427.jpg";
+import Image51431 from "../../src/assets/images/Untitled Session51431.jpg";
+
+//zairah
+import Image51241 from "../../src/assets/images/Untitled Session51241.jpg";
+import Image51265 from "../../src/assets/images/Untitled Session51265.jpg";
+import Image51269 from "../../src/assets/images/Untitled Session51269.jpg";
+import Image51272 from "../../src/assets/images/Untitled Session51272.jpg";
+import Image51275 from "../../src/assets/images/Untitled Session51275.jpg";
+import Image51276 from "../../src/assets/images/Untitled Session51276.jpg";
+
 export const images = {
+  Image51241,
+  Image51265,
+  Image51269,
+  Image51272,
+  Image51275,
+  Image51276,
+  Image51404,
+  Image51412,
+  Image51422,
+  Image51427,
+  Image51431,
   Image51652,
   Image51658,
   Image51662,

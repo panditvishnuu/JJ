@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Centered Logo */}
           <Link
             to="/"
-            className="absolute left-1/2 -translate-x-1/2 md:relative md:left-0 md:translate-x-0 md:mx-auto"
+            className="absolute left-1/2 -translate-x-1/2 md:relative md:left-16 md:translate-x-0 md:mx-auto"
           >
             <img
               src={images.logo}

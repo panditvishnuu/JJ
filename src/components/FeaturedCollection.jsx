@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const productCardVariants = [
   {
     id: 1,
-    image: images.zairah,
+    image: images.Image51252,
     brand: "JJ Atelier",
     name: "Zairah",
     price: null,
@@ -27,7 +27,15 @@ const productCardVariants = [
     modelSize: "Medium",
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51229,
+      images.Image51241,
+      images.Image51265,
+      images.Image51269,
+      images.Image51272,
+      images.Image51275,
+      images.Image51276,
+    ],
   },
   {
     id: 2,
@@ -87,7 +95,13 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51404,
+      images.Image51412,
+      images.Image51422,
+      images.Image51427,
+      images.Image51431,
+    ],
   },
   {
     id: 4,
