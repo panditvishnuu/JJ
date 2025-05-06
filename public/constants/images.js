@@ -32,7 +32,7 @@ import rakaa from "../../src/assets/images/RAKAA.jpg";
 import sevina from "../../src/assets/images/SEVINA.jpg";
 
 //Alvara
-import Image51802 from "../../src/assets/images/Untitled Session51802.jpg"
+import Image51802 from "../../src/assets/images/Untitled Session51802.jpg";
 import Image51808 from "../../src/assets/images/Untitled Session51808.jpg";
 import Image51818 from "../../src/assets/images/Untitled Session51818.jpg";
 import Image51820 from "../../src/assets/images/Untitled Session51820.jpg";
@@ -40,9 +40,19 @@ import Image51822 from "../../src/assets/images/Untitled Session51822.jpg";
 import Image51827 from "../../src/assets/images/Untitled Session51827.jpg";
 import Image51828 from "../../src/assets/images/Untitled Session51828.jpg";
 
-
+//azmina
+import Image51480 from "../../src/assets/images/Untitled Session51480.jpg";
+import Image51487 from "../../src/assets/images/Untitled Session51487.jpg";
+import Image51489 from "../../src/assets/images/Untitled Session51489.jpg";
+import Image51494 from "../../src/assets/images/Untitled Session51494.jpg";
+import Image51498 from "../../src/assets/images/Untitled Session51498.jpg";
 
 export const images = {
+  Image51480,
+  Image51487,
+  Image51489,
+  Image51494,
+  Image51498,
   Image51802,
   Image51808,
   Image51818,
