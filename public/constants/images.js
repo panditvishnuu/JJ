@@ -31,7 +31,25 @@ import oceira from "../../src/assets/images/Velina.jpg";
 import rakaa from "../../src/assets/images/RAKAA.jpg";
 import sevina from "../../src/assets/images/SEVINA.jpg";
 
+//Alvara
+import Image51802 from "../../src/assets/images/Untitled Session51802.jpg"
+import Image51808 from "../../src/assets/images/Untitled Session51808.jpg";
+import Image51818 from "../../src/assets/images/Untitled Session51818.jpg";
+import Image51820 from "../../src/assets/images/Untitled Session51820.jpg";
+import Image51822 from "../../src/assets/images/Untitled Session51822.jpg";
+import Image51827 from "../../src/assets/images/Untitled Session51827.jpg";
+import Image51828 from "../../src/assets/images/Untitled Session51828.jpg";
+
+
+
 export const images = {
+  Image51802,
+  Image51808,
+  Image51818,
+  Image51820,
+  Image51822,
+  Image51827,
+  Image51828,
   zairah,
   erya,
   velina,

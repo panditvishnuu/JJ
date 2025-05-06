@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import ProductCard from "./FeatureProductCard";
 import { images } from "../../public/constants/images";
-import { useProducts } from "../hooks/useProducts";
 import { Link } from "react-router-dom";
 
 const productCardVariants = [
@@ -305,7 +304,15 @@ const productCardVariants = [
     modelSize: null,
     disclaimer:
       "The color of the product might appear slightly different from what you see here. This can be due to the varying display settings on different devices, as well as any lighting filters or special effects used during the photo shoot.",
-    images: [],
+    images: [
+      images.Image51802,
+      images.Image51808,
+      images.Image51818,
+      images.Image51820,
+      images.Image51822,
+      images.Image51827,
+      images.Image51828,
+    ],
   },
   {
     id: 13,

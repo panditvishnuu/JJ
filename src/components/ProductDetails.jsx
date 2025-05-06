@@ -71,7 +71,7 @@ const ProductDetail = () => {
             {/* Main Image */}
             <div className="relative w-full">
               <img
-                src={product.image}
+                src={product.images[selectedImageIndex]}
                 alt={product.name}
                 className="w-full h-auto object-cover rounded-md"
               />
